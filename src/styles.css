@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #122033;
+  --color-navy: #1c3352;
+  --color-brass: #a6844a;
+  --color-brass-soft: #c4a36a;
+  --color-parchment: #f4efe6;
+  --color-paper: #fbf8f3;
+  --color-card: #fffcf8;
+  --color-muted: #5c6775;
+  --color-line: #e4dcd0;
+  --color-ink-soft: #24344a;
+  --font-display: "Newsreader", Georgia, serif;
+  --font-sans: "Outfit", system-ui, sans-serif;
+  --font-urdu: "Noto Nastaliq Urdu", "Noto Naskh Arabic", serif;
+  --radius-card: 1.25rem;
+  --aspect-wide: 16 / 10;
+  --aspect-photo: 3 / 2;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    background-image: radial-gradient(ellipse at top, var(--color-parchment), transparent 58%);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.55;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+
+  html[dir="rtl"] body,
+  html[dir="rtl"] button,
+  html[dir="rtl"] input,
+  html[dir="rtl"] textarea,
+  html[dir="rtl"] select {
+    font-family: var(--font-urdu);
+    letter-spacing: 0;
+    line-height: 2;
+  }
+
+  html[dir="rtl"] h1,
+  html[dir="rtl"] h2,
+  html[dir="rtl"] h3,
+  html[dir="rtl"] .font-display {
+    font-family: var(--font-urdu);
+    letter-spacing: 0;
+    line-height: 1.85;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}

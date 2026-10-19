@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "AHK Consultancy Services · Islamabad visa guidance",
+      "hasCanvas": false,
+      "bodyTextLen": 3131,
+      "bodyTextHash": "8ade1d89d565ec3465c8f7b8ccd0108c4f44a8f0c2f419a52c5b88083df1da62",
+      "bodyTextPrefix": "Skip to content AHK AHK Consultancy Visa guidance · Islamabad Ho",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "AHK Consultancy Services · Islamabad visa guidance",
+      "hasCanvas": false,
+      "bodyTextLen": 3079,
+      "bodyTextHash": "e75aaa365b422eb612d7905f1c949d79639fc88fa8ff13803515357aac7fdc56",
+      "bodyTextPrefix": "Skip to content AHK AHK Consultancy Visa guidance · Islamabad EN",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
